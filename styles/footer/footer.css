@@ -1,0 +1,22 @@
+.footer{
+    background-color: black;
+    padding: 100px 0;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--white-color);
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.footer p{
+    margin: 10px 0;
+}
+
+.footer h2{
+    margin: 10px 0;
+}

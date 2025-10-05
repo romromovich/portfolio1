@@ -1,0 +1,162 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.nav-container {
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+}
+.nav-toggler {
+    visibility: hidden;
+    position: fixed;
+}
+
+.nav-toggler:checked ~ .nav-body .nav-label::before{
+    content: url(img/form-btn--close.svg);
+    top: 45%;
+}
+
+.nav-toggler:checked ~ .nav-body .nav-label::after{
+    content: "Закрыть";
+    right: 20px;
+    top: 45%;
+}
+
+.nav-body {
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 102;
+    padding: 0 20px;
+}
+.nav-body-img{
+    width: 200px;
+    
+    
+}
+
+.nav-body::before{
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: var(--accent-color-2);
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+.nav-body::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: var(--accent-color-1);
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+
+.nav-label {
+    border: 4px solid var(--accent-color-1);
+    width: 200px;
+    display: inline-block;
+    height: 50px;
+    position: relative;
+}
+
+.nav-label::before{
+    content: url(img/form-btn--open.svg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.nav-label::after{
+    content: "Оставить заявку";
+    font-size: 1rem;
+    color: var(--accent-color-1);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-black {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.507);
+    z-index: 101;
+    transform: scaleY(0);
+    transition: 0.3s;
+    transform-origin: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-toggler:checked ~ .nav-black{
+    transform: scaleY(1);
+}
+
+.nav-form{
+    background-color: var(--bg-color);
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+}
+
+.nav-form-input{
+    width: 75%;
+    height: 30px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: #EAEAEA;
+    color: var(--white-color);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    color: black;
+}
+
+.nav-form-input::placeholder{
+    color: var(--white-color);
+    
+}
+
+.nav-form-btn{
+    text-decoration: none;
+    border: none;
+    background-color: var(--accent-color-2);
+    color: var(--white-color);
+    padding: 15px 40px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.nav-form button:active{
+    transform: scale(0.9);
+
+}
+
+.nav-form-btn:hover{
+    opacity: 0.8;
+}

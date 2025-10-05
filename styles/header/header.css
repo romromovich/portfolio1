@@ -1,0 +1,75 @@
+.header{
+    width: 100%;
+    padding-top: 110px;
+    background: url(img/header-bg.png) center/cover no-repeat;
+}
+
+.header-container{
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 15px;
+}
+
+.header-left{
+    width: 50%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding-left: 70px;
+}
+
+.header-left a{
+    text-decoration: none;
+    border: 2px solid var(--accent-color-2);
+    border-radius: 100%;
+    padding: 40px;
+    
+}
+
+.header-left img{
+    transition: 0.3s;
+}
+
+.header-left a:hover img{
+    transform: translateY(120px);
+}
+
+.header-left h1{
+    
+}
+
+.header-right{
+    width: 50%;
+    height: 600px;
+    box-shadow: 0 0px 30px black;
+    background-color: rgba(255, 255, 255, 0.534);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid var(--white-color);
+    position: relative;
+}
+
+.knight{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    
+}
+
+.panel{
+    position: absolute;
+    left: -40px;
+    top: 40px;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    height: 40%;
+    object-fit: cover;
+}

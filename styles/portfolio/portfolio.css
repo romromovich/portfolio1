@@ -1,0 +1,107 @@
+.portfolio{
+    padding: 200px 0;
+}
+
+.portfolio-container{
+    max-width: 1150px;
+    padding: 10px;
+    margin: auto;
+}
+
+.portfolio-container input{
+    opacity: 0;
+    position: fixed;
+}
+
+.input-1 {
+    
+
+}
+.input-2 {
+}
+.input-3 {
+}
+
+.input-1:checked ~ .portfolio-labels .label-1{
+    background: #5d6dd4;
+    background: linear-gradient(180deg, rgba(93, 109, 212, 1) 0%, rgba(193, 78, 199, 1) 50%, rgba(199, 48, 154, 1) 100%);
+    
+}
+.input-2:checked ~ .portfolio-labels .label-2{
+    background: #5d6dd4;
+    background: linear-gradient(180deg, rgba(93, 109, 212, 1) 0%, rgba(193, 78, 199, 1) 50%, rgba(199, 48, 154, 1) 100%);
+    
+}
+.input-3:checked ~ .portfolio-labels .label-3{
+    background: #5d6dd4;
+    background: linear-gradient(180deg, rgba(93, 109, 212, 1) 0%, rgba(193, 78, 199, 1) 50%, rgba(199, 48, 154, 1) 100%);
+    
+}
+
+.input-1:checked ~ .portfolio-images .portfolio-img1{
+    width: 100%;
+} 
+
+.input-2:checked ~ .portfolio-images .portfolio-img2{
+    width: 100%;
+} 
+
+.input-3:checked ~ .portfolio-images .portfolio-img3{
+    width: 100%;
+} 
+
+.portfolio-labels {
+    height: 100px;
+    border-radius: 20px;
+    background-color: black;
+    color: var(--white-color);
+    display: flex;
+}
+.label-1 {
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.label-2 {
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.label-3 {
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-images {
+    height: 600px;
+    display: flex;
+    margin: 30px;
+}
+.portfolio-img1 {
+    height: 100%;
+    object-fit: cover;
+    width: 0;
+    transition: 0.6s;
+}
+.portfolio-img2 {
+    height: 100%;
+    object-fit: cover;
+    width: 0;
+    transition: 0.6s;
+}
+.portfolio-img3 {
+    height: 100%;
+    object-fit: cover;
+    width: 0;
+    transition: 0.6s;
+}
